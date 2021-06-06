@@ -7,9 +7,9 @@ from arcade.gui import UIManager
 
 class MyFlatButton(arcade.gui.UIFlatButton):
 
-   # def on_click(self):
-   #     """ Called when user lets off button """
-    #    print(f"")
+    def on_click(self):
+        """ Called when user lets off button """
+        print(f"")
 
 class MyFlatResultButton(arcade.gui.UIFlatButton):
 
