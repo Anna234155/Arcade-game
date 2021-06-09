@@ -1,0 +1,27 @@
+I used sounds, textures and images come from the arcade library resources:
+
+https://arcade.academy/resources.html#resources-images-enemies
+
+Images:
+
+playership :resources:images/space_shooter/playerShip1_green.png
+star :resources:images/items/star.png
+meteor :resources:images/space_shooter/meteorGrey_big1.png", 0.25, max_health=3)
+            asteroid.center_x = random.randrange(800)
+sun :resources:images/pinball/bumper.png
+laser :resources:images/space_shooter/laserBlue01.png
+laser(bullet here) :resources:images/space_shooter/laserRed01.png
+
+Music:
+
+background music :resources:music/1918.mp3
+death sound :resources:sounds/hit5.wav
+gun sound :resources:sounds/hurt5.wav
+star sound :resources:sounds/explosion2.wav
+end sound :resources:sounds/phaseJump1.wav
+
+Textures:
+
+button(normal) :resources:gui_basic_assets/red_button_normal.png
+button(hovered) :resources:gui_basic_assets/red_button_hover.png
+button(pressed) :resources:gui_basic_assets/red_button_press.png
