@@ -7,8 +7,6 @@ This project is my own version of the classic "Galaxian" game. The goal of the g
 
 ![image](/IMAGES/easy.png)
 
-![image](/IMAGES/hard.png)
-
 ### Technologies
 **arcade** - cross-platform set of Python modules designed for writing video games. It includes computer graphics and sound libraries designed to be used with the Python programming language.
 
