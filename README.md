@@ -15,6 +15,9 @@ This project is my own version of the classic "Galaxian" game. The goal of the g
 `git clone  https://github.com/Anna234155/Arcade-game.git arcade_game`
 
 `cd arcade_game`
+
 2. Install the project's development and runtime requirements:
+3. 
 `pip install -r requirements.txt`
+
 3. Run the game.
