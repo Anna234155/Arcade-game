@@ -17,7 +17,6 @@ This project is my own version of the classic "Galaxian" game. The goal of the g
 `cd arcade_game`
 
 2. Install the project's development and runtime requirements:
-3. 
 `pip install -r requirements.txt`
 
 3. Run the game.
