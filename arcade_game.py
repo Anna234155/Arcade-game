@@ -38,6 +38,13 @@ class MyView(arcade.View):
         self.playership_list.draw()
         self.star_list.draw()
 
+
+        WIDTH = 800
+        HEIGHT = 600
+
+        arcade.draw_text("SPACE TRAVEL", self.window.width // 2, 3 * self.window.height // 4,
+                             arcade.color.YELLOW, font_size=50, anchor_x="center")
+
     def on_show_view(self):
 
         self.setup()
@@ -60,9 +67,11 @@ class MyView(arcade.View):
         hovered_texture = arcade.load_texture(':resources:gui_basic_assets/red_button_hover.png')
         pressed_texture = arcade.load_texture(':resources:gui_basic_assets/red_button_press.png')
 
+
+
         start_button = MyFlatButton(
             center_x=self.window.width // 2.75,
-            center_y=y_slot * 3,
+            center_y=y_slot * 2.65,
             normal_texture=button_normal,
             hover_texture=hovered_texture,
             press_texture=pressed_texture,
@@ -72,7 +81,7 @@ class MyView(arcade.View):
 
         start_hard_button = MyHardFlatButton(
             center_x= self.window.width - (self.window.width // 2.75),
-            center_y=y_slot * 3,
+            center_y=y_slot * 2.65,
             normal_texture=button_normal,
             hover_texture=hovered_texture,
             press_texture=pressed_texture,
@@ -421,7 +430,7 @@ class HardGameView(arcade.View):
 
     def on_show(self):
 
-        arcade.set_background_color(arcade.color.STEEL_PINK)
+        arcade.set_background_color(arcade.color.BLACK)
         self.window.set_mouse_visible(False)
 
     def on_draw(self):
@@ -479,7 +488,6 @@ class HardGameView(arcade.View):
             for asteroid in hit_list:
                 arcade.play_sound(self.death_sound)
                 asteroid.current_health -= 1
-                self.score += 1
 
                 if asteroid.current_health <= 0:
                     asteroid.remove_from_sprite_lists()
