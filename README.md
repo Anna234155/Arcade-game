@@ -13,6 +13,7 @@ This project is my own version of the classic "Galaxian" game. The goal of the g
 ### How to run this app?
 1. Clone the template project: 
 `git clone  https://github.com/Anna234155/Arcade-game.git arcade_game`
+
 `cd arcade_game`
 2. Install the project's development and runtime requirements:
 `pip install -r requirements.txt`
